@@ -1,5 +1,12 @@
 [user]
 	name = Christian Metts
 	email = xian@mintchaos.com
+[push]
+	default = current
 [init]
 	defaultBranch = main
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
