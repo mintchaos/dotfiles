@@ -351,6 +351,17 @@ window-rule {
     open-focused false
 }
 
+window-rule {
+    match app-id="steam"
+    match app-id="steam" title="Friends List"
+    default-column-width { proportion 0.166665; }
+}
+
+window-rule {
+    match app-id="steam" title="Steam"
+    default-column-width { proportion 0.6666; }
+}
+
 
 window-rule {
     match is-window-cast-target=true
@@ -396,7 +407,7 @@ window-rule {
 // Example: enable rounded corners for all windows.
 // (This example rule is commented out with a "/-" in front.)
 window-rule {
-    geometry-corner-radius 8
+    geometry-corner-radius 6
     clip-to-geometry true
 }
 
