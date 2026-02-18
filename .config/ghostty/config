@@ -44,7 +44,12 @@
 
 window-decoration = server
 =======
-theme = Raycast_Dark
+theme = Raycast Dark
 font-size = 16
 
 keybind = global:cmd+opt+grave_accent=toggle_quick_terminal
+
+
+# shaders
+# https://github.com/sahaj-b/ghostty-cursor-shaders
+custom-shader = warp-shader.glsl 
